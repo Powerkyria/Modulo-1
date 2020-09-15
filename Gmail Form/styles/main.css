@@ -6,6 +6,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	box-sizing: border-box;
 }
 
 .form {
@@ -42,7 +43,7 @@ body {
 .firstname,
 .surname {
 	width: 7rem;
-	flex-basis: 49%;
+	flex-basis: 47.2%;
 }
 
 .email::placeholder {
@@ -61,15 +62,14 @@ body {
 	border: none;
 }
 
-input,
-select {
+input {
 	border-radius: 3px;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	-ms-border-radius: 3px;
 	-o-border-radius: 3px;
 	border: 1px solid gray;
-	height: 1.563rem;
+	height: 21px;
 }
 
 .form_birthday {
@@ -79,7 +79,7 @@ select {
 
 .day {
 	width: 1rem;
-	flex-basis: 19%;
+	flex-basis: 17%;
 }
 
 .month {
@@ -88,12 +88,22 @@ select {
 
 .year {
 	width: 1rem;
-	flex-basis: 29%;
+	flex-basis: 27%;
 }
 
 select {
 	font-weight: 600;
 	font-size: 0.813rem;
+	height: 25px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+}
+
+.gender {
+	height: 1.65rem;
 }
 
 .ubicacion {
@@ -103,6 +113,7 @@ select {
 .button {
 	display: flex;
 	justify-content: flex-end;
+	margin-bottom: 15px;
 }
 
 .submit {
