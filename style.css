@@ -1,0 +1,13 @@
+body {
+	margin-top: 30px;
+	text-align: center;
+}
+
+a {
+	line-height: 1.6;
+	display: block;
+}
+
+a:hover {
+	color:#000;
+}
