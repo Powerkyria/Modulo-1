@@ -1,0 +1,47 @@
+body {
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	min-width: 100vw;
+	box-sizing: border-box;
+	background-image: url("../images/sky.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	width: 30%;
+}
+
+img {
+	width: 100%;
+}
+
+.parachute_animation {
+	animation-duration: 10s;
+	animation-name: cloud;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+}
+
+@keyframes cloud {
+	from {
+		transform: translateY(-400px) scale(0);
+		-webkit-transform: translateY(-400px) scale(0);
+		-moz-transform: translateY(-400px) scale(0);
+		-ms-transform: translateY(-400px) scale(0);
+		-o-transform: translateY(-400px) scale(0);
+		-webkit-transform: translateY(-500px) scale(0);
+	}
+	to {
+		transform: translateY(0px) scale(1);
+		-webkit-transform: translateY(0px) scale(1);
+		-moz-transform: translateY(0px) scale(1);
+		-ms-transform: translateY(0px) scale(1);
+		-o-transform: translateY(0px) scale(1);
+		-webkit-transform: translateY(0px) scale(1);
+	}
+}

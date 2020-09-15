@@ -1,0 +1,130 @@
+body {
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	min-width: 20rem;
+	max-width: 23.438rem;
+	background-image: -webkit-linear-gradient(bottom, white, rgb(183, 191, 194));
+	padding: 1.5rem;
+	border: 1px solid cornflowerblue;
+	flex: 1;
+	padding-bottom: 0;
+}
+
+.form_field {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 15px;
+	margin-bottom: 0.9rem;
+}
+
+.labels {
+	font-size: 0.86rem;
+	margin-bottom: .3rem;
+	font-weight: 600;
+}
+
+.form_names {
+	display: flex;
+	justify-content: space-between;
+}
+
+.firstname,
+.surname {
+	width: 7rem;
+	flex-basis: 49%;
+}
+
+.email::placeholder {
+	text-align: end;
+}
+
+.email:valid {
+	border: 1.5px solid rgb(184, 247, 184);
+}
+
+.email:invalid {
+	border: 1px solid rgb(231, 25, 25);
+}
+
+.email:focus {
+	border: none;
+}
+
+input,
+select {
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border: 1px solid gray;
+	height: 1.563rem;
+}
+
+.form_birthday {
+	display: flex;
+	justify-content: space-between;
+}
+
+.day {
+	width: 1rem;
+	flex-basis: 19%;
+}
+
+.month {
+	flex-basis: 48%;
+}
+
+.year {
+	width: 1rem;
+	flex-basis: 29%;
+}
+
+select {
+	font-weight: 600;
+	font-size: 0.813rem;
+}
+
+.ubicacion {
+	margin-bottom: 1rem;
+}
+
+.button {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.submit {
+	font-size: 14px;
+	font-size: 0.875rem;
+	color: white;
+	background-color: steelblue;
+	padding: 0.5rem;
+	border: none;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	margin: 10px 0;
+	margin: 0.625rem 0;
+}
+
+.submit:hover {
+	background-image: -webkit-linear-gradient(
+		rgb(171, 190, 204),
+		rgb(109, 168, 216)
+	);
+	cursor: pointer;
+}

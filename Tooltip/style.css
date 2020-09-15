@@ -1,0 +1,53 @@
+body {
+	font-family: sans-serif;
+	line-height: 1.4;
+	width: auto;
+	height: 120vh;
+	margin: 0;
+	padding: 15px 40px;
+}
+
+ul {
+	display: inline-block; /*para que al pasar el cursor no abarque todo el ancho de la pantalla*/
+}
+
+li {
+	cursor: pointer;
+	margin-bottom: 15px;
+}
+
+li:hover {
+	color: skyblue;
+}
+
+span.tooltip {
+	border-bottom: 1px dashed gray;
+	cursor: pointer;
+	position: relative;
+}
+
+span.tooltip::before {
+	content: attr(data-info);
+}
+
+span.tooltip::before {
+	display: none; /*Lo ocultamos*/
+	content: attr(data-info);
+	color: white;
+	font-size: 15px;
+	line-height: 1.5;
+	text-align: center;
+	padding: 20px;
+	background-color: rgba(0, 0, 0, 0.8);
+	border-radius: 5px;
+	position: absolute; /* lo posicionamos de modo absoluto dentro del span*/
+	top: -10px;
+	left: 130px;
+	width: 400px;
+	height: 200px;
+	z-index: 1;
+}
+
+span.tooltip:hover::before {
+	display: block; /*Lo mostramos */
+}

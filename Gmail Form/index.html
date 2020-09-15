@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail Form</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+
+    <div class="form">
+
+        <form action="" method="get">
+
+            <div class="form_field">
+                <label class="labels" for="names">Nombre</label>
+
+                <div class="form_names">
+                    <input class="firstname" id="names" type="text" placeholder=" Nombre" required>
+
+                    <input class="surname" id="surnames" type="text" placeholder=" Apellidos" required>
+                </div>
+            </div>
+
+            <div class="form_field">
+                <label class="labels" for="username">Nombre de usuario</label>
+                <input class="email" type="email" id="username" placeholder="@gmail.com   " required>
+            </div>
+
+            <div class="form_field">
+                <label class="labels" for="contraseña">Contraseña</label>
+                <input type="password" id="contraseña" required>
+            </div>
+
+            <div class="form_field">
+                <label class="labels" for="re_contraseña">Confirma tu contraseña</label>
+                <input type="password" id="re_contraseña" required>
+            </div>
+
+            <div class="form_field">
+
+                <label class="labels" for="fecha">Fecha de nacimiento</label>
+
+                <div class="form_birthday">
+
+                    <input type="tel" class="day" placeholder=" Día" maxlength="2" name="day" id="fecha" required>
+
+                    <select class="month" name="month" id="month" required>
+                        <option>Mes</option>
+                        <option value="1">Enero</option>
+                        <option value="2">Febrero</option>
+                        <option value="3">Marzo</option>
+                        <option value="4">Abril</option>
+                        <option value="5">Mayo</option>
+                        <option value="6">Junio</option>
+                        <option value="7">Julio</option>
+                        <option value="8">Agosto</option>
+                        <option value="9">Septiembre</option>
+                        <option value="10">Octubre</option>
+                        <option value="11">Noviembre</option>
+                        <option value="12">Diciembre</option>
+                    </select>
+
+                    <input type="tel" class="year" placeholder=" Año" name="year" maxlength="4" id="fecha" required>
+
+                </div>
+            </div>
+
+            <div class="form_field">
+                <label class="labels" for="sexo">Sexo</label>
+
+                <select class="gender" name="sexo" id="sexo">
+                    <option>Selecciona tu género</option>
+                    <option value="1">Femenino</option>
+                    <option value="2">Masculino</option>
+                    <option value="3">Personalizado</option>
+                </select>
+            </div>
+
+            <div class="form_field">
+                <label class="labels" for="telefono">Teléfono móvil</label>
+
+                <input type="tel" value=" +34 " pattern="[+34 ]{5}[0-9]{9}" name="telefono" id="telefono" required>
+            </div>
+
+            <div class="form_field">
+                <label class="labels" for="email_actual">Tu dirección de correo electrónico actual</label>
+                <input class="email" type="email" id="email_actual" required>
+            </div>
+
+            <div class="form_field ubicacion">
+                <label class="labels" for="ubicacion">Ubicación</label>
+                <select name="ubicacion" id="ubicacion" required>
+                    <option value="Es" selected>España</option>
+                    <option value="Fr">Francia</option>
+                    <option value="it">Italia</option>
+                    <option value="Pt">Portugal</option>
+                    <option value="Ger">Alemania</option>
+                </select>
+            </div>
+
+            <div class="button">
+                <button class="submit" type="submit" alt="create button">Siguiente paso</button>
+            </div>
+    </div>
+    </form>
+</body>
+
+</html>

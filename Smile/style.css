@@ -1,0 +1,22 @@
+body {
+	font-size: 16px;
+}
+.smile {
+	width: 6.25rem; /*100px*/
+	height: 6.25rem; /*100px*/
+	line-height: 6.25rem; /*100px */
+	text-align: center;
+	font-family: 'courier new';
+	font-weight: bold;
+	font-size: 3.125rem; /* 50px*/
+	color: #424242;
+	background: #ffcc00;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+}
+
+/* 2-Para que el smile mida 50x50 el tamaño de fuente tendria que ser de 8px. 8x6.25=50px de width y de height
+  3-Para que el smile mida 200x200 el tamaño de fuente tendria que ser de 32px. 32x6.25=200px de width y de height*/

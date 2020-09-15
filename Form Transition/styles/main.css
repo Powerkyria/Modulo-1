@@ -1,0 +1,80 @@
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.form_container {
+	width: 100%;
+	max-width: 500px;
+	min-width: 200px;
+	display: flex;
+	flex-direction: column;
+	background-color: rgb(226, 224, 224);
+	padding: 0 2rem;
+}
+
+h1 {
+	color: teal;
+	margin-bottom: 0;
+	text-align: center;
+}
+
+h2 {
+	font-size: 2em;
+	text-align: center;
+	color: #333;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+input {
+	height: 32px;
+	margin-bottom: 15px;
+	cursor: text;
+}
+
+.labels {
+	position: relative;
+	top: -45px;
+	left: 12px;
+	font-size: 20px;
+	color: gray;
+	transition: all .5s;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-ms-transition: all .5s;
+	-o-transition: all .5s;
+}
+
+.email_input:focus ~ .email_label {
+	top: -78px;
+	color: #333;
+	left: 0;
+	font-size: 18px;
+}
+
+.password_input:focus ~ .password_label {
+	top: -78px;
+	left: 0;
+	color: #333;
+	font-size: 18px;
+}
+
+input:focus {
+	border: 3px solid skyblue;
+}
+
+button {
+	color: white;
+	background-color: teal;
+	border: 1px solid rgb(7, 78, 78);
+	padding: .7rem;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 600;
+}
